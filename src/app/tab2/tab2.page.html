@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Resultados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card-header style="text-align: center;">
+    
+    <img [src]="imagemCaixa">
+    <ion-card-subtitle >O consumo aproximado de água é de 170 litros/dia. 
+        Para manter o abastecimento durante {{dias}} dia(s) com {{pessoas}} morador(es) indicamos uma reservatório no mínimo:</ion-card-subtitle>
+    <ion-card-subtitle >Volume de água estimado!</ion-card-subtitle>
+    <ion-card-title class="resultado" >{{resultado}}L</ion-card-title>
+    <ion-button (click)="Calculo()" color="success"  expand="full">Calcular</ion-button>
+    <ion-button (click)="Voltar()"  expand="full">Voltar</ion-button>
+    <ion-button (click)="Dados()"  expand="full">Medidas</ion-button>
+    
+  </ion-card-header>
+
+</ion-content>
